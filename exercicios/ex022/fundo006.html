@@ -7,16 +7,27 @@
     <style>
         body{
             height: 100vh;
-            background-color: black;
-            background-image: url('imagens/wallpaper002.jpg');
-            background-position: center top;
-            background-repeat: repeat-x;
-            background-size: cover;
-            background-attachment: scroll;
+            background-color: black; 
+            background-image: url('imagens/wallpaper002.jpg'); background-position: center top; 
+            background-repeat: no-repeat; 
+            background-size: cover; 
+            background-attachment: fixed;
+
+            /* para fazer um shorthand backgroud, ou seja, resumir esses códigos em apenas um:
+            
+            (manter o height e o background-size separados)
+            deve ficar assim
+
+            height:100vh;
+            background-size: cover ;
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+
+            manter a sequência: color > image (url) > position > repeat > attachment
+            */
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
