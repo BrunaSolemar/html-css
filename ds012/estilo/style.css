@@ -1,1 +1,68 @@
 @charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    /*text-transform: uppercase; 
+    deixa todo o texto em letra maiúscula*/
+    font-variant: small-caps; /*também deixa em letra maiúscula, mas a primeira letra de cada parágrafo fica maior, é mais bonito*/
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*dá afastamento entre as linhas*/
+    padding-left: 30px;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(48, 46, 46);
+    color: white;
+
+}
+
+section.imagem > p{ /*criei uma caixa preta transparente atrás do texto, pra destacar na imagem*/
+    background-color: rgba(0, 0, 0, 0.199);
+    width: 400px;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
