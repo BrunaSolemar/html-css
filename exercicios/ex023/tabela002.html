@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+
+        .numero{
+            text-align: right;
+        }
         thead, tfoot{
             background-color: gray;
             color: white;
@@ -29,6 +33,10 @@
             padding: 10px;
             background-color: lightgray;
         }
+
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
@@ -38,116 +46,114 @@
         <thead>
             <tr>
                 <th scope="col">Estado</th>
-                <th scope="col" style="width: 50px;">População</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>45 919 049</td>
+                <td class="numero">45 919 049</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>21 168 791</td>
+                <td class="numero">21 168 791</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>17 264 943</td>
+                <td class="numero">17 264 943</td>
             </tr>
             <tr>
                 <td>Bahia</td>
-                <td>16 054 524</td>
+                <td class="numero">16 054 524</td>
             </tr>
             <tr>
                 <td>Paraná</td>
-                <td>11 443 208</td>
+                <td class="numero">11 443 208</td>
             </tr>
             <tr>
                 <td>Rio Grande do Su</td>
-                <td>10 880 506</td>
+                <td class="numero">10 880 506</td>
             </tr>
             <tr>
                 <td>Pernambuco</td>
-                <td>9 058 155</td>
+                <td class="numero">9 058 155</td>
             </tr>
             <tr>
                 <td>Ceará</td>
-                <td>8 791 688</td>
+                <td class="numero">8 791 688</td>
             </tr>
             <tr>
                 <td>Pará</td>
-                <td>8 116 132	</td>
+                <td class="numero">8 116 132	</td>
             </tr>
             <tr>
                 <td>Santa Catarina</td>
-                <td>7 609 601</td>
+                <td class="numero">7 609 601</td>
             </tr>
             <tr>
                 <td>Goiás</td>
-                <td>7 055 228</td>
+                <td class="numero">7 055 228</td>
             </tr>
             <tr>
                 <td>Maranhão</td>
-                <td>6 775 152</td>
+                <td class="numero">6 775 152</td>
             </tr>
             <tr>
                 <td>Paraíba</td>
-                <td>3 974 495</td>
+                <td class="numero">3 974 495</td>
             </tr>
             <tr>
                 <td>Amazonas</td>
-                <td>3 941 175</td>
+                <td class="numero">3 941 175</td>
             </tr>
             <tr>
                 <td>Espírito Santo</td>
-                <td>3 833 486</td>
+                <td class="numero">3 833 486</td>
             </tr>
             <tr>
                 <td>Mato Grosso</td>
-                <td>3 658 813</td>
+                <td class="numero">3 658 813</td>
             </tr>
             <tr>
                 <td>Rio Grande do Norte</td>
-                <td>3 302 406</td>
+                <td class="numero">3 302 406</td>
             </tr>
             <tr>
                 <td>Piauí</td>
-                <td>3 269 200</td>
+                <td class="numero">3 269 200</td>
             </tr>
             <tr>
                 <td>Alagoas</td>
-                <td>3 127 511</td>
+                <td class="numero">3 127 511</td>
             </tr>
             <tr>
                 <td>Distrito Federal</td>
-                <td>2 817 068</td>
+                <td class="numero">2 817 068</td>
             </tr>
             <tr>
                 <td>Mato Grosso do Sul</td>
-                <td>2 756 700</td>
+                <td class="numero">2 756 700</td>
             </tr>
             <tr>
                 <td>Sergipe</td>
-                <td>2 209 558	</td>
-                <tr>
-                    <td>Rondônia</td>
-                    <td>1 581 016</td>
-                <tr>
-                    <td> Tocantins</td>
-                    <td>1 511 459</td>
-
-                </tr>
-                <tr>
-                    <td>Acre</td>
-                    <td>830 026</td>
-                </tr>
-                <tr>
-                    <td>Amapá</td>
-                    <td>733 508</td>
-                </tr>
-                    <td>Roraima</td>
-                    <td>636 303</td>
-                </tr>
+                <td class="numero">2 209 558	</td>
+            <tr>
+                <td>Rondônia</td>
+                <td class="numero">1 581 016</td>
+            <tr>
+                <td> Tocantins</td>
+                <td class="numero">1 511 459</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="numero">830 026</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="numero">733 508</td>
+            </tr>
+                <td>Roraima</td>
+                <td class="numero">636 303</td>
             </tr>
         </tbody>
         <tfoot>
