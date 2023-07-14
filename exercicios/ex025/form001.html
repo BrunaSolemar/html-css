@@ -13,10 +13,12 @@
 <body>
     <h1>Meu primeiro formulário</h1>
 
-    <form action="cadastro.php" autocomplete="off">      <!--Para desativar o preenchimento automatico dos campos do formulário -->  
+    <form action="cadastro.php" method="post" autocomplete="off">      
+        
+        <!--Para desativar o preenchimento automatico dos campos do formulário -->  
 
         <p><label for="inome">Nome:</label> 
-            <input type="text" name="nome" id="inome"></p>
+           <input type="text" name="nome" id="inome"></p>
 
         <p><label for="isobrenome">Sobrenome:</label> 
             <input type="text" name="sobrenome" id="isobrenome"></p>
