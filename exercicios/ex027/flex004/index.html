@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        div.conteiner{
+            background-color:lightsalmon;
+            height: 300px;
+            display: flex; /*dimensiona o conteiner de acorodo com o tamanho da tela*/
+            flex-flow: row nowrap;
+           /* justify-content: center; justifica no centro*/
+
+          /* justify-content: space-around; divide o conteiner em partes e dentro dessas partes divide os itens, a distribuição é diferente do espace-evenly*/
+
+         /* justify-content: space-between; Gruda o primeiro item no main star, o ultimmo item no main-end e distrubui o restante igualmente dentro do conteiner*/
+
+         justify-content: space-evenly;           
+         /*distribui igualmente todos os itens do conteiner deixando espaços tambem no main start e no main end, distribuição diferente do space around*/
+
+         /*align-items: flex-start;  gruda tudo em cima*/
+
+      /*  align-items: flex-end  gruda tudo em cima*/
+
+      align-items:center; /*fica no meio do conteiner*/
+        } 
+
+        
+
+
+
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        
+    </div>
+</body>
+</html>
