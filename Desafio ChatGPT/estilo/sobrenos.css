@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+main{
+    position: relative;
+    z-index: 2;                /*permite que os textos vão pra frente da imagem*/
+    padding: 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+   
+}
+
+img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.5;
+    
+}
+
+h1{
+    background-color: rgb(38, 38, 146);
+    text-align: center;
+    font-size: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100vw;
+    color: rgb(151, 153, 230);
+    z-index: 2;
+    position: relative;
+}
+
+p{
+    font-size: 35px;
+    color: rgb(35, 23, 139);
+    margin: 55px;
+    text-align: justify;
+
+}
