@@ -16,7 +16,8 @@ nav > a{
     text-decoration: none;
     padding: 10px;
     background-color: rgb(19, 19, 173);
-    
+    display: block;
+    text-align: center;
 
 }
 
@@ -63,18 +64,28 @@ button.botao:hover{
     background-color: rgb(34, 34, 94);
 }
 
-span#burger{
-    background-color: black;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 10px;
+#burger{
+    font-size: 36px;
     cursor: pointer;
-}
-span#burger:hover{
-    background-color: blue;
-    color: white;
-}
-menu{
     display: none;
+    padding: 10px;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+}
+
+nav#itens{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: blue;
+}
+
+nav#itens a{
+    padding: 15px;
+    text-align: center;
+    width: 100%;
 }
