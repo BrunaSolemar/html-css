@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    z-index: 2;
 
 }
 
@@ -10,31 +11,38 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     background-color: bisque;
+    
 }
 
 .depoimentos{
     text-align: center;
     max-width: 600px;
-    padding: 20px;
+    width: 900px;
+    padding: 10px;
+    margin: 20px;
     background: white;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     border-radius: 10px;
+    background-color: rgb(255, 239, 220);
 }
 
 h2{
     margin-bottom: 20px;
-
+    background-color: bisque;
+    padding: 20px;
 }
 
 .carrossel{
     position: relative;
     overflow: hidden;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
 }
 
+/*esconde os radio buttons*/
 input[type="radio"]{
     display: none;
 }
@@ -43,4 +51,90 @@ input[type="radio"]{
     display: flex;
     width: 300%;
     transition: transform 0.5s ease-in-out;
+}
+
+.slide{
+    width: 100%;
+    padding: 0px;
+    flex-shrink: 0;
+    transition: opacity 0.5s;
+    box-sizing: border-box; /*evita que o padding aumente o tamanho do slide*/
+    text-align: justify;
+    min-height: 150px; /*garante que o texto nao seja cortado*/
+    /*centralizando os textos*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/*contorle dos slides*/
+#slide1:checked ~ .slides{
+    transform: translateX(0%);
+}
+
+#slide2:checked ~ .slides{
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides{
+    transform: translateX(-200%);
+}
+
+/*botões de navegação*/
+
+.navegacao{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.navegacao label{
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background: rgb(255, 203, 139);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#slide1:checked ~ .navegacao label:nth-child(1),
+#slide2:checked ~ .navegacao label:nth-child(2),
+#slide3:checked ~ .navegacao label:nth-child(3){
+    background: #555;
+}
+
+h1{
+    position: relative;
+    color: rgb(104, 57, 0);
+    background-color: rgb(255, 182, 93);
+    margin-right: 30px;
+    font-style: oblique;
+    
+}
+
+h4{
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+p{
+    text-align: left;
+   
+}
+
+img{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0.5;
+    
+}
+
+body, h1{
+    z-index: 2;
 }

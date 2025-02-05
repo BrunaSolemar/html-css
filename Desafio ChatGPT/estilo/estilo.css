@@ -1,7 +1,9 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-size: cover;
 }
 
 header{
@@ -12,8 +14,9 @@ header{
 nav > a{
     color: antiquewhite;
     font-size: 20px;
-    margin-top: 10px;
-    margin: 50px;
+    text-decoration: none;
+    margin: 30px;
+    padding: 20px;
     background-color: rgb(19, 19, 173);
     
 
@@ -24,8 +27,8 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 
     
 }
@@ -61,3 +64,4 @@ button.botao{
 button.botao:hover{
     background-color: rgb(34, 34, 94);
 }
+
