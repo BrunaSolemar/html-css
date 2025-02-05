@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-size: cover;
 }
 
 header{
@@ -16,8 +17,7 @@ nav > a{
     text-decoration: none;
     padding: 10px;
     background-color: rgb(19, 19, 173);
-    display: block;
-    text-align: center;
+    
 
 }
 
@@ -64,28 +64,3 @@ button.botao:hover{
     background-color: rgb(34, 34, 94);
 }
 
-#burger{
-    font-size: 36px;
-    cursor: pointer;
-    display: none;
-    padding: 10px;
-    background-color: blueviolet;
-    border: none;
-    border-radius: 5px;
-}
-
-nav#itens{
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background-color: blue;
-}
-
-nav#itens a{
-    padding: 15px;
-    text-align: center;
-    width: 100%;
-}
