@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="mediaquery.css">
    
 </head>
-<body>
+<body onresize="mudouTamanho">
     <header>
+        <span id="burger" class="material.icons" onclick="clickMenu()">Menu</span>
+        <menu id="itens"></menu>
         <nav>
             <a href="sobrenos.html">Sobre Nós</a>
             <a href="servicos.html">Serviços</a>
