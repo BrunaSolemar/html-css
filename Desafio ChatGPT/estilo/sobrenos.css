@@ -41,6 +41,8 @@ h1{
     color: rgb(151, 153, 230);
     z-index: 2;
     position: relative;
+    font-weight: bold;
+    font-style: oblique;
 }
 
 p{
