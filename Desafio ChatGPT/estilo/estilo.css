@@ -62,3 +62,19 @@ button.botao{
 button.botao:hover{
     background-color: rgb(34, 34, 94);
 }
+
+span#burger{
+    background-color: black;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+span#burger:hover{
+    background-color: blue;
+    color: white;
+}
+menu{
+    display: none;
+}
